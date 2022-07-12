@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 8000;
 
-const server = app.listen(8000);
+const server = app.listen(PORT);
 const io = require("socket.io")(server);
 app.use("/", express.static("public"));
 
@@ -86,4 +87,4 @@ app.get("/", function (request, response) {
     response.render("StreetFighter");
 });
 
-console.log("server started at port: 8000");
+console.log("server started at port: ", PORT);
