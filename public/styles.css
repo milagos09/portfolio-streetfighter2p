@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+}
+#background {
+    width: 800px;
+    height: 270px;
+    background: url("./assets/background_blanka.gif");
+    background-size: cover;
+}
+
+#character1 {
+    background: url("./assets/ken.png") -0px -160px;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+}
+#character2 {
+    background: url("./assets/ken.png") -70px -160px;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.special-p1 {
+    background: url("./assets/ken.png") -5px -340px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 10;
+}
+
+.special-p2 {
+    background: url("./assets/ken.png") -5px -340px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(180deg);
+}
+
+#damage {
+    background: red;
+    opacity: 0.1;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+#impact {
+    display: none;
+    background: url("./assets/ken.png") -160px -420px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+}
+
+#block {
+    display: none;
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    top: 185px;
+    left: 100px;
+}
+
+#healthbar1 {
+    width: 200px;
+    height: 15px;
+    background-color: lightgreen;
+    border: 3px solid green;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+#special-bar1 {
+    width: 100px;
+    height: 5px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    position: absolute;
+    top: 51px;
+    left: 25px;
+}
+
+#join1 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+}
+
+#healthbar2 {
+    width: 200px;
+    height: 15px;
+    background-color: pink;
+    border: 3px solid red;
+    position: absolute;
+    top: 30px;
+    left: 325px;
+}
+
+#special-bar2 {
+    width: 100px;
+    height: 5px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    position: absolute;
+    top: 51px;
+    left: 325px;
+}
+
+#join2 {
+    position: absolute;
+    top: 60px;
+    left: 325px;
+}
+#controls {
+    color: #fff;
+    left: 830px;
+    top: 5px;
+    position: absolute;
+}
+button {
+    display: none;
+    position: absolute;
+    left: 380px;
+    top: 110px;
+}

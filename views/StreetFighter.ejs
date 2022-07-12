@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script async src="./script.js"></script>
+        <script async src="./sockets.js"></script>
+        <title>Street Fighter Demo</title>
+    </head>
+    <body>
+        <button id="gameover" onclick="location.reload()">Play Again?</button>
+        <div id="background">
+            <div id="damage"></div>
+            <div id="character1" style="top: -100px"></div>
+            <div id="character2" style="top: -100px"></div>
+            <span id="block">Block!</span>
+            <span id="impact"></span>
+
+            <div id="healthbar1"></div>
+            <div id="healthbar2"></div>
+            <div id="special-bar1"></div>
+            <div id="special-bar2"></div>
+            <div id="controls">
+                Punch: Q
+                <br />
+                Kick: W
+                <br />
+                High Kick: E
+                <br />
+                Special: R
+                <br />
+                Block: A
+                <br />
+                Directions: ⬅ ➡ ⬆ ⬇
+            </div>
+        </div>
+        <button value="p1" id="join1" class="join btn btn-sm btn-success">Join as Player1</button>
+        <button value="p2" id="join2" class="join btn btn-sm btn-danger">Join as Player2</button>
+    </body>
+</html>
