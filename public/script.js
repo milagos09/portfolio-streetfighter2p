@@ -17,7 +17,7 @@ const p1 = {
         hadouken.style.top = this.top + 20 + "px";
         hadouken.style.left = this.left + 70 + "px";
     },
-    sp: 100,
+    sp: 200,
 };
 
 const p2 = {
@@ -39,7 +39,7 @@ const p2 = {
         hadouken.style.top = this.top + "px";
         hadouken.style.left = this.left - 30 + "px";
     },
-    sp: 100,
+    sp: 200,
 };
 
 const players = { p1, p2 };
@@ -63,8 +63,8 @@ function updateDisplay() {
     document.getElementById("healthbar2").style.width = p2.hp + "px";
     document.getElementById("special-bar1").style.width = p1.sp + "px";
     document.getElementById("special-bar2").style.width = p2.sp + "px";
-    if (p1.sp < 100) p1.sp += 0.5;
-    if (p2.sp < 100) p2.sp += 0.5;
+    if (p1.sp < 200) p1.sp += 1;
+    if (p2.sp < 200) p2.sp += 1;
 
     if (p1.hp <= 0) {
         document.getElementById("healthbar1").style.width = "0px";
@@ -208,7 +208,7 @@ function action(p) {
                 p.doc.style.backgroundPosition = `${p.frameNumber * -70}px -0px`;
                 p.frameNumber++;
                 if (p.frameEnd == p.frameNumber) p.special();
-                p.sp -= 5;
+                p.sp -= 20;
                 if (p.sp < 0) p.sp = 0;
             }
             break;

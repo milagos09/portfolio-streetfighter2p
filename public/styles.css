@@ -72,23 +72,23 @@ body {
     background-color: lightgreen;
     border: 3px solid green;
     position: absolute;
-    top: 30px;
+    top: 51px;
     left: 25px;
 }
 
 #special-bar1 {
-    width: 100px;
+    width: 200px;
     height: 5px;
     background-color: lightblue;
     border: 1px solid blue;
     position: absolute;
-    top: 51px;
+    top: 70px;
     left: 25px;
 }
 
 #join1 {
     position: absolute;
-    top: 60px;
+    top: 15px;
     left: 25px;
 }
 
@@ -98,25 +98,25 @@ body {
     background-color: pink;
     border: 3px solid red;
     position: absolute;
-    top: 30px;
+    top: 51px;
+    left: 325px;
+}
+#join2 {
+    position: absolute;
+    top: 15px;
     left: 325px;
 }
 
 #special-bar2 {
-    width: 100px;
+    width: 200px;
     height: 5px;
     background-color: lightblue;
     border: 1px solid blue;
     position: absolute;
-    top: 51px;
+    top: 70px;
     left: 325px;
 }
 
-#join2 {
-    position: absolute;
-    top: 60px;
-    left: 325px;
-}
 #controls {
     color: #fff;
     left: 830px;

@@ -10,12 +10,12 @@ app.set("view engine", "ejs");
 const player1 = {
     name: null,
     id: null,
-    default: { id: "p1", hp: 200, top: 185, left: 100, action: "stand", frameNumber: 0, sp: 100 },
+    default: { id: "p1", hp: 200, top: 185, left: 100, action: "stand", frameNumber: 0, sp: 200 },
 };
 const player2 = {
     name: null,
     id: null,
-    default: { id: "p2", hp: 200, top: 185, left: 400, action: "stand", frameNumber: 0, sp: 100 },
+    default: { id: "p2", hp: 200, top: 185, left: 400, action: "stand", frameNumber: 0, sp: 200 },
 };
 
 let gameLoop;

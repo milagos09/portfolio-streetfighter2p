@@ -88,7 +88,7 @@ $(".join").click(function () {
                 break;
             case "r":
                 {
-                    if (players[pos].sp > 5) {
+                    if (players[pos].sp > 20) {
                         socket.emit("action", { pos: pos, action: "special", frameEnd: 4 });
                     }
                 }
